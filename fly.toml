@@ -1,0 +1,23 @@
+app = "e-commerce-api3"
+primary_region = "cdg"
+console_command = "php /var/www/html/bin/console"
+
+[build]
+  [build.args]
+    PHP_VERSION = "8.2"
+
+[env]
+  APP_RUNTIME = '\App\FlySymfonyRuntime'
+  APP_ENV = "production"
+  LOG_CHANNEL = "stderr"
+  LOG_LEVEL = "info"
+  LOG_STDERR_FORMATTER = "Monolog\\Formatter\\JsonFormatter"
+  SESSION_DRIVER = "cookie"
+  SESSION_SECURE_COOKIE = "true"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = false
+  processes = ["app"]
