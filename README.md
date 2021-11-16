@@ -1,4 +1,4 @@
-# api
+# e-commerce-api
 
 ## Getting Started
 
