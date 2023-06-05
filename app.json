@@ -1,0 +1,5 @@
+{
+    "scripts": {
+      "postdeploy": "php bin/console doctrine:schema:update --force --complete"
+    }
+  }
