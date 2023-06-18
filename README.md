@@ -1,5 +1,7 @@
 # e-commerce-api
 
+Symfony API built for [e-commerce-client](https://github.com/thoughtsunificator/e-commerce-client).
+
 ## Getting Started
 
 ## Prerequisites
