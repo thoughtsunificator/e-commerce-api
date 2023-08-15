@@ -7,7 +7,6 @@ console_command = "php /var/www/html/bin/console"
     PHP_VERSION = "8.2"
 
 [env]
-  APP_RUNTIME = '\App\FlySymfonyRuntime'
   APP_ENV = "production"
   LOG_CHANNEL = "stderr"
   LOG_LEVEL = "info"
@@ -16,7 +15,7 @@ console_command = "php /var/www/html/bin/console"
   SESSION_SECURE_COOKIE = "true"
 
 [http_service]
-  internal_port = 8080
+  internal_port = 80
   force_https = true
   auto_stop_machines = false
   auto_start_machines = false

@@ -3,7 +3,7 @@ FROM php:8.2-fpm
 ENV COMPOSER_ALLOW_SUPERUSER=1
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends --no-install-suggests zlib1g-dev zip libpq-dev git nginx && \
+    apt-get install -y --no-install-recommends --no-install-suggests zlib1g-dev libzip-dev zip libpq-dev git nginx && \
     rm -rf /var/lib/apt/lists/* && \ 
 	docker-php-ext-install pdo pdo_pgsql zip
 
